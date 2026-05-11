@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FreshMart Billing</title>
+<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+<header>
+    <div>🛒 FreshMart</div>
+    <div>Billing Calculator</div>
+</header>
+
+<div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+
+        <div class="panel">
+
+            <h3>Add Item</h3>
+
+            <label>Item Name</label>
+            <select id="itemName">
+                <option>Bread</option>
+                <option>Milk</option>
+                <option>Rice</option>
+                <option>Sugar</option>
+                <option>Oil</option>
+            </select>
+
+            <label>Price (RWF)</label>
+            <input id="price" readonly />
+
+            <label>Quantity</label>
+            <input type="number" id="qty"/>
+
+            <button onclick="addItem()">Add Item</button>
+
+            <div class="items">
+                <h4>Available Items</h4>
+                <div class="item-row"><span>Bread</span><span>500</span></div>
+                <div class="item-row"><span>Milk</span><span>1000</span></div>
+                <div class="item-row"><span>Rice</span><span>1500</span></div>
+                <div class="item-row"><span>Sugar</span><span>1200</span></div>
+                <div class="item-row"><span>Oil</span><span>2000</span></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+        <h3>Bill</h3>
+
+        <div class="cart-box">
+
+
+            <!-- 🔥 TABLE ALWAYS EXISTS -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cartBody">
+    <tr>
+        <td colspan="5" class="empty">
+            <div class="cart-icon">🛒</div>
+            No items added yet
+        </td>
+    </tr>
+</tbody>
+
+            </table>
+
+        </div>
+
+        <div class="summary">
+
+            <div class="summary-box">
+                <span>Total</span>
+                <span class="value" id="total" style="color: rgb(53,135,250);;">RWF 0</span>
+            </div>
+
+            <div class="summary-box">
+                <span>Amount Paid</span>
+                <input type="number" id="paid"/>
+            </div>
+
+            <div class="summary-box">
+                <span>Change</span>
+                <span class="value" id="change">RWF 0</span>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="calcChange()">Calculate Change</button>
+            <button class="danger" onclick="clearAll()">Clear All</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

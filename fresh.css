@@ -1,0 +1,155 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    margin:0;
+    background:#f4f4f4;
+}
+
+
+header{
+    background:rgb(53,135,250);
+    color:white;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand-title{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.page-title{
+    font-size:18px;
+    opacity:0.9;
+}
+
+
+.layout{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    align-items:flex-start;
+}
+
+.panel-left{
+    flex:1;
+    margin-top:35px;
+}
+
+.panel-right{
+    flex:2;
+}
+
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.danger{
+    background:#f44336;
+}
+
+
+.stock-box{
+    margin-top:15px;
+    background:#f4f4f4;
+    padding:10px;
+    border-radius:10px;
+}
+
+.stock-row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+}
+
+.cart-area{
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:rgb(53,135,250);
+    color:white;
+    padding:10px;
+    text-align:left;
+}
+
+td{
+    padding:10px;
+    background:#f4f4f4;
+}
+
+.empty-state{
+    text-align:center;
+    color:#777;
+    padding:20px;
+}
+
+
+.summary-boxes{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.summary-item{
+    display:flex;
+    justify-content:space-between;
+    background:#fff;
+    padding:12px;
+    border-radius:8px;
+}
+
+.value{
+    color:green;
+    font-weight:bold;
+}
+
+
+.action-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
